@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/index.js",  // This should point to the api/index.js file
+      "src": "api/index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",  // Match all requests
-      "dest": "/api/index.js",  // Send all requests to the Express handler
+      "src": "/(.*)",
+      "dest": "/api/index.js",
       "methods": [
         "GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"
       ]
